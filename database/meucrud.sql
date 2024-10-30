@@ -38,21 +38,26 @@ INSERT INTO owner (
     'Joca da Silva',
     'jocasilva@email.com',
     SHA1('Senha123')
+), (
+    '1999-10-11',
+    'Marineuza Siriliano',
+    'marineuza@email.com',
+    SHA1('Senha123')
 );
 
-INSERT INTO thing (
-    t_owner,
-    t_photo,
-    t_name,
-    t_description,
-    t_location
-) VALUES (
-    '1',
-    'https://picsum.photos/200',
-    'peteca',
-    'Cheia de penas velhas',
-    'Caixa de sapato sob a cama'
-);
+INSERT INTO thing (t_owner, t_photo, t_name, t_description, t_location) VALUES
+(1, 'https://picsum.photos/196', 'peteca', 'Cheia de penas velhas', 'Caixa de sapato sob a cama'),
+(2, 'https://picsum.photos/197', 'caneca', 'Caneca de cerâmica verde', 'Prateleira da cozinha'),
+(1, 'https://picsum.photos/198', 'livro', 'Livro de capa dura', 'Estante do escritório'),
+(2, 'https://picsum.photos/199', 'relógio', 'Relógio de parede antigo', 'Sala de estar'),
+(1, 'https://picsum.photos/200', 'ferramenta', 'Martelo de carpinteiro', 'Caixa de ferramentas na garagem'),
+(2, 'https://picsum.photos/201', 'vaso', 'Vaso de vidro transparente', 'Mesa da sala de jantar'),
+(1, 'https://picsum.photos/202', 'brinquedo', 'Carrinho de brinquedo', 'Quarto das crianças'),
+(2, 'https://picsum.photos/203', 'guitarra', 'Guitarra elétrica vermelha', 'Estúdio de música'),
+(1, 'https://picsum.photos/204', 'pintura', 'Quadro abstrato colorido', 'Parede do corredor'),
+(2, 'https://picsum.photos/205', 'cadeira', 'Cadeira de escritório ergonômica', 'Home office');
+
+
 
 -- CREATE DATABASE meucruddb;
 -- USE meucruddb;
